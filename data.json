@@ -1,0 +1,10 @@
+{
+  "Harvard"  : { "paper": 9, "intern": 5, "project": 5 },
+  "Yale"     : { "paper": 8, "intern": 8, "project": 9 },
+  "Penn"     : { "paper": 5, "intern": 2, "project": 6 },
+  "Princeton": { "paper": 7, "intern": 6, "project": 8 },
+  "Columbia" : { "paper": 4, "intern": 8, "project": 5 },
+  "Brown"    : { "paper": 2, "intern": 5, "project": 2 },
+  "Dartmouth": { "paper": 9, "intern": 9, "project": 6 },
+  "Cornell"  : { "paper": 3, "intern": 7, "project": 4 }
+}

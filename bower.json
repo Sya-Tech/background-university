@@ -1,0 +1,21 @@
+{
+  "name": "achievement-university",
+  "description": "成就与大学对应关系可视化实现",
+  "version": "0.0.0",
+  "homepage": "http://gerhut.gerhut.io/achievement-university",
+  "authors": [
+    "George Chung <Gerhut@GMail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "c3": "~0.2.5",
+    "pure": "~0.5.0"
+  }
+}
