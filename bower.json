@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "c3": "~0.2.5",
-    "pure": "~0.5.0"
+    "bootstrap": "~3.2.0"
   }
 }

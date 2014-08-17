@@ -1,10 +1,32 @@
 {
-  "Harvard"  : { "paper": 9, "intern": 5, "project": 5 },
-  "Yale"     : { "paper": 8, "intern": 8, "project": 9 },
-  "Penn"     : { "paper": 5, "intern": 2, "project": 6 },
-  "Princeton": { "paper": 7, "intern": 6, "project": 8 },
-  "Columbia" : { "paper": 4, "intern": 8, "project": 5 },
-  "Brown"    : { "paper": 2, "intern": 5, "project": 2 },
-  "Dartmouth": { "paper": 9, "intern": 9, "project": 6 },
-  "Cornell"  : { "paper": 3, "intern": 7, "project": 4 }
+  "Harvard"  : {
+    "EE": { "paper": 9, "intern": 8, "project": 3 },
+    "CS": { "paper": 2, "intern": 10, "project": 3 }
+  },
+  "Yale"     : {
+    "EE": {"paper": 10, "intern": 6, "project": 4 },
+    "CS": {"paper": 6, "intern": 9, "project": 5 }
+  },
+  "Penn"     : {
+    "CS": {"paper": 8, "intern": 7, "project": 3 }
+  },
+  "Princeton": {
+    "EE": {"paper": 6, "intern": 4, "project": 9 },
+    "CS": {"paper": 8, "intern": 8, "project": 5 }
+  },
+  "Columbia" : {
+    "EE": {"paper": 4, "intern": 1, "project": 1 },
+    "CS": {"paper": 7, "intern": 8, "project": 9 }
+  },
+  "Brown"    : {
+    "EE": {"paper": 9, "intern": 8, "project": 9 }
+  },
+  "Dartmouth": {
+    "EE": {"paper": 10, "intern": 5, "project": 6 },
+    "CS": {"paper": 8, "intern": 4, "project": 8 }
+  },
+  "Cornell"  : {
+    "EE": {"paper": 10, "intern": 8, "project": 7 },
+    "CS": {"paper": 2, "intern": 5, "project": 1 }
+  }
 }

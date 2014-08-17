@@ -3,23 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>背景与大学对应关系可视化实现</title>
-  <link rel="stylesheet" href="bower_components/pure/pure-min.css">
+  <title>菁英背景提升 - 背景与大学对应关系可视化实现</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="bower_components/c3/c3.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <span class="pure-menu-heading">背景与大学对应关系可视化实现</span>
-    <ul>
-      <li><a id="background" href="#">所有背景</a></li>
-      <li><a id="university" href="#">所有大学</a></li>
-    </ul>
+  <div class="container-fluid">
+    <header class="page-header">
+      <h1>菁英背景提升 <small>大学专业与背景关系</small></h1>
+    </header>
+    <div class="rows">
+      <div class="col-sm-3">
+        <div id="university-chart-list" class="chart-list list-group"></div>
+        <div id="major-chart-list" class="chart-list list-group"></div>
+      </div>
+      <div class="col-sm-9">
+        <h2 id="title">数据读取中……</h2>
+        <div id="chart"></div>
+      </div>
+    </div>
+    <footer>
+      <hr>
+      <p class="text-center">Sya Experience Tech.</p>
+    </footer>
   </div>
-  <h1 id="title">少女祈祷中……</h1>
-  <div id="chart"></div>
   <script src="bower_components/d3/d3.min.js"></script>
   <script src="bower_components/c3/c3.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
