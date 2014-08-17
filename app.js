@@ -17,16 +17,16 @@ void function () {
   })
 
   var apply = function (title, json) {
+    document.getElementById('title').innerText = title
     chart.load({
       json: json,
       unload: true
     })
-    console.dir(chart)
   }
 
   var university = function (name) {
     var json = {}
-    var title = (name || '') + '大学与背景的关系'
+    var title = name ? name + '大学与背景的关系' : '大学占比'
     if (name) {
       json = data[name]
     } else {
@@ -43,7 +43,7 @@ void function () {
 
   var background = function (name) {
     var json = {}
-    var title = (name || '') + '背景与大学的关系'
+    var title = name ? name + '背景与大学的关系' : '背景占比'
     if (name) {
       for (var u in data) {
         json[u] = data[u][name]
