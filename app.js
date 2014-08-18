@@ -4,10 +4,12 @@ void function ($) {
     size: { height: 480 },
     data: {
       x : 'x',
-      rows: []
+      rows: [],
+      type: 'bar'
     },
     axis: {
-      x: { type: 'category' }
+      x: { type: 'category' },
+      rotated: true
     }
   })
 
@@ -72,24 +74,24 @@ void function ($) {
         backgrounds.majors.project.push([m, json[u][m].project])
       }
 
-      $charts = $charts.add(construct$chart(u, { rows: rows, type: 'bar' }))
+      $charts = $charts.add(construct$chart(u, { rows: rows }))
     }
     $('#university-chart-list').append($charts)
 
     $charts = $()
     for (var m in majors) {
-      $charts = $charts.add(construct$chart(m, { rows: majors[m], type: 'bar' }))
+      $charts = $charts.add(construct$chart(m, { rows: majors[m] }))
     }
     $('#major-chart-list').append($charts)
 
     $charts = $()
     for (var b in backgrounds.universities) {
       $('#' + b + '-chart-list').append(
-        construct$chart(b + ' 按院校', { columns: backgrounds.universities[b], type: 'pie' }))
+        construct$chart(b + ' 按院校', { columns: backgrounds.universities[b] }))
     }
     for (var b in backgrounds.majors) {
       $('#' + b + '-chart-list').append(
-        construct$chart(b + ' 按专业', { columns: backgrounds.majors[b], type: 'pie' }))
+        construct$chart(b + ' 按专业', { columns: backgrounds.majors[b] }))
     }
 
     $title.text('')
@@ -119,12 +121,7 @@ void function ($) {
     $title.text($this.text())
     
     var data = $this.data('chart')
-    if (currentType !== data.type) {
-      currentType = data.type
-      chart.load($.extend(data, { unload: true }))
-    } else {
-      chart.load(data)
-    }
+    chart.load($.extend(data, { unload: true }))
     
     $chartList.find('.list-group-item').removeClass('active')
     $this.addClass('active')
